@@ -1,0 +1,44 @@
+.list{
+    font-size: 1.3em;
+    color: black;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px;
+    border: 1px solid;
+    border-color: grey;
+    border-radius: 10px;
+    background: rgb(248, 248, 248)
+}
+/* aligns chevron and X images to the right + some basic styling */
+
+.align-right{
+    float: right;
+    size: .8em;
+}
+
+.hover:hover{
+    cursor: pointer;
+    color:rgb(162, 159, 159);
+  }
+
+.card{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(194, 194, 194);
+    padding: 10px;
+}
+
+.answer{
+    font-size: .8em;
+}
+
+@media (max-width: 1200px) {
+    .list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10%;
+        margin-left: auto;
+    }
+}

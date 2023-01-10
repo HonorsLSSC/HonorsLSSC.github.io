@@ -1,24 +1,68 @@
-import logo from './logo.svg';
+import React, { useState } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Sidebar from './components/Sidebar.js'
 import './App.css';
+import Header from './components/Header'
+import Feedback from './components/Feedback'
+import Tutorial from './components/Tutorial'
+import Homepage from './pages/Homepage'
+import Faq from './pages/Faq'
+import About from './pages/About'
+
+
+
 
 function App() {
+  const [modal, showModal] = useState(false)
+
+  const openTutorial = () => {
+    showModal(true)
+  }
+  const closeTutorial = () => {
+    showModal(false)
+  }
+
+  const [feedback, showFeedback] = useState(false)
+
+  const openFeedback = () => {
+    showFeedback(true)
+  }
+  const closeFeedback = () => {
+    showFeedback(false)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App grid">
+      
+
+      <BrowserRouter>
+        <div className='side'>
+          <Sidebar openTutorial={openTutorial}/>
+          {modal && <Tutorial closeTutorial={closeTutorial}/>}
+          {feedback && <Feedback openFeedback={openFeedback}/>}
+        </div>
+      <Switch>
+        <Route exact path='/'>
+          <Header title={'Welcome to Karlins 2.0'} />
+          <div className='body'>
+            <Homepage openTutorial={openTutorial}/>
+          </div>
+        </Route>
+        <Route exact path='/faq'>
+          <Header title={"Frequently Asked Questions"}/>
+          <div className='body'>
+            <Faq openTutorial={openTutorial}/>
+          </div>
+        </Route>
+        <Route exact path='/about'>
+          <Header title='What Is Karlins 2.0?' />
+          <div className='body'>
+            <About openTutorial={openTutorial}/>
+          </div>
+        </Route>
+      </Switch>
+      </BrowserRouter>
     </div>
+    
   );
 }
 

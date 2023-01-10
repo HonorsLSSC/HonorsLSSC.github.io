@@ -1,0 +1,16 @@
+.header{
+    background-color: #104c34;
+    color: rgb(236, 233, 233);
+    border-bottom: 4px solid;
+    border-color: rgb(141, 141, 27);
+    height: 100%;
+    display: flex;
+    grid-area: header;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}

@@ -1,0 +1,11 @@
+.wrapper{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 35px;
+    border: solid 4px;
+    border-color: rgb(141, 141, 27);
+    border-radius: 4px;
+    background-color: #202e28;
+    right: 0;
+    color: white;
+}
