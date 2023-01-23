@@ -59,9 +59,11 @@ export default function Faq({openTutorial}) {
                 {privacy && <div className='card'>
                     <i className="fa-solid fa-x align-right hover" onClick={closePrivacy}></i>
                     <p className='answer'>
-                        No, no one is able to see what you type to Karlins 2.0. The only text people will see is if you
-                        submit a feedback ticket. Only Professor Karlins and the current Student Assistant can see those.
-                        I hope this helps!
+                        While we originally thought no one would be able to see what you type, this turns
+                        out to be true only part of the time. If you type something, and the bot breaks,
+                        the botpress website adds it to the pending chats tab, meaning, we will be able
+                        to see the chat that caused the error. It is all anoynymous though, and will only
+                        appear if the bot misunderstands.
                     </p>
                 </div>}
                 <br></br>
