@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header'
 import Feedback from './components/Feedback'
 import Tutorial from './components/Tutorial'
+import Warning from './components/Warning'
 import Homepage from './pages/Homepage'
 import Faq from './pages/Faq'
 import About from './pages/About'
@@ -30,6 +31,12 @@ function App() {
   const closeFeedback = () => {
     showFeedback(false)
   }
+
+  const[warning, showWarning] = useState(true)
+
+  const hideWarning = () => {
+    showWarning(false)
+  }
   return (
     <div className="App grid">
       
@@ -40,6 +47,7 @@ function App() {
           {modal && <Tutorial closeTutorial={closeTutorial}/>}
           {feedback && <Feedback openFeedback={openFeedback}/>}
         </div>
+        {warning && <Warning hideWarning={hideWarning}/> }
       <Switch>
         <Route exact path='/'>
           <Header title={'Welcome to Karlins 2.0'} />

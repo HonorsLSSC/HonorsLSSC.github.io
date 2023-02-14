@@ -9,9 +9,10 @@
   grid-template-areas: 
     "side header"
     "side nav"
+    "side warning"
     "side body";
 
-  grid-template-rows: 200px 1px 1fr;
+  grid-template-rows: 200px 1px 75px 1fr;
  
 }
 .side{
@@ -19,6 +20,14 @@
 }
 .body{
   grid-area: body;
+}
+.warning{
+  grid-area: warning;
+  border-bottom: 2px solid red;
+  background-color: rgb(230, 170, 148);
+  color: red;
+  padding: 20px;
+  font-size: 1.2em;
 }
 
 @media (max-width: 1200px) {
