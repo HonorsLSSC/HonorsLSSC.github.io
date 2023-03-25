@@ -9,8 +9,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Helmet>
-      <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-      <script src="https://mediafiles.botpress.cloud/cb155fd5-9977-406b-ab76-cd7e77db012c/webchat/config.js" defer></script>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/c57a3033-d9e3-4d95-a66f-f802233773da/webchat/config.js" defer></script>
       <script src="https://kit.fontawesome.com/208aceaa1a.js" crossorigin="anonymous"></script>
     </Helmet>
     <App />

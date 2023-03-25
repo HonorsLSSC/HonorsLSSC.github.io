@@ -20,7 +20,7 @@ export default function Sidebar( {openTutorial, openFeedback} ) {
             <br></br>
             <li>
                 {/* <h2 className='link' onClick={openFeedback}>Submit Feedback</h2> */}
-                <a className='nav' target={'_blank'} href='https://docs.google.com/forms/d/e/1FAIpQLSdrMDYiZqJkW5J7y3qb1-EbJV89f9CGyMMGCY63eQPWbvmumw/viewform?usp=sf_link'>
+                <a className='nav' target={'_blank'} href='https://docs.google.com/forms/d/e/1FAIpQLSdskXrMnWIViiSwyIYBaC9T9ro31Yg2CG150NCSaPA-B0OQRg/viewform?usp=sf_link'>
                     <h2 className='link'>Submit Feedback</h2>
                 </a>
             </li>

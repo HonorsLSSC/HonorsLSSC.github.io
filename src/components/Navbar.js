@@ -22,7 +22,7 @@ export default function Navbar({openTutorial}) {
                     <h4 className='link'>About</h4>
                 </li>
             </Link>
-            <a target={'_blank'} href='https://docs.google.com/forms/d/e/1FAIpQLSdrMDYiZqJkW5J7y3qb1-EbJV89f9CGyMMGCY63eQPWbvmumw/viewform?usp=sf_link'>
+            <a target={'_blank'} href='https://docs.google.com/forms/d/e/1FAIpQLSdskXrMnWIViiSwyIYBaC9T9ro31Yg2CG150NCSaPA-B0OQRg/viewform?usp=sf_link'>
                 <li className='nav'>
                     <h4 className='link'>Feedback</h4>
                 </li>
