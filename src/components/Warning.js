@@ -4,9 +4,8 @@ import './Warning.css'
 export default function Warning({hideWarning}) {
   return (
     <div className='warning'>
-            NOTE: Karlins 2.0 is just recovering from a update. Things might not 
-            work right, but we are back up. Your feedback is critical! Please fill 
-            out feedback forms if you experience <strong>any</strong> issues!
+            NOTE: Karlins 2.0 is under new management! Alex will be taking over the bot for the 2023-2024 academic year. 
+            Please fill out feedback forms. They are critical to improving the bot!
             <i className="fa-solid fa-x align-right hover" onClick={hideWarning}></i>
     </div>
   )
